@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html>
+<title>COVID-19 Complaints in Austin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+    }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+            .dropdown-content a:hover {
+                background-color: #ddd;
+            }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    #t01 tr:nth-child(even) {
+        background-color: #eee;
+    }
+
+    #t01 tr:nth-child(odd) {
+        background-color: #fff;
+    }
+
+    #t01 th {
+        background-color: black;
+        color: white;
+    }
+</style>
+<nav class="w3-bar w3-black">
+    <a href="index.html" class="w3-button w3-bar-item">COVID-19 Complaints in Austin</a>
+
+</nav>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Complaints
+                <i class="fa fa-caret-down"></i>
+
+            </button>
+
+            </section>
+            <div class="dropdown-content">
+                <a href="#">Register</a>
+                <a href="#">Fetch</a>
+                <a href="#">Update</a>
+                <a href="#">Delete</a>
+            </div>
+        </div>
+        <a href="aboutus.html">About Us</a>
+    </div>
+
+    <h2>Austin COVID-19 Complaints Data Visualization</h2>
+
+    <p>Start date (month/year) the individual complaint was filed for COVID-19 related violation.</p>
+    <img src="opendate.png" alt="HTML5 Icon" width="808" height="508">
+    <p> </p>
+    <p>Type of complaint the individual filed for COVID-19 related violation.</p>
+    <img src="typeofcomp.PNG" alt="HTML5 Icon" width="808" height="508">
+    <p> </p>
+    <p>Where the individual complaint violation was found related to COVID-19 violation.</p>
+    <img src="typeofbusi.PNG" alt="HTML5 Icon" width="808" height="508">
+    <p> </p>
+    <h2>Sample Data</h2>
+    <table id="t01">
+        <tr>
+            <th>
+                CASENUMBER
+            </th>
+            <th>
+                CASECLASSIFICATION
+            </th>
+            <th>
+                TYPEOFBUSINESS
+            </th>
+            <th>
+                TYPEOFCOMPLAINT
+
+            </th>
+            <th>
+                OPENDATE
+
+            </th>
+            <th>
+                CLOSEDATE
+            </th>
+            <th>
+                OUTCOME
+
+            </th>
+            <th>
+                ADDRESS
+
+            </th>
+            <th>
+                PARCELID
+
+            </th>
+            <th>
+                POINT
+            </th>
+
+
+        </tr>
+        <tr>
+            <td>
+                2020 059719-CC
+            </td>
+            <td>
+                COVID-19
+            </td>
+            <td>
+                Residential
+            </td>
+            <td>
+                Social Distancing
+            </td>
+            <td>
+                4/14/2020 0:00
+            </td>
+            <td>
+                4/14/2020 0:00
+            </td>
+            <td>
+                No Violation(s) Found/Inspection Performed
+            </td>
+            <td>
+                3400 COMSOUTH DRIVE
+            </td>
+            <td>
+                314100503
+            </td>
+            <td>
+                POINT (-97.72025889 30.21237679)
+            </td>
+
+        </tr>
+        <tr>
+
+
+
+
+        <tr>
+            <td>
+                2021 015371-CC
+            </td>
+            <td>
+                COVID-19
+            </td>
+            <td>
+                Apartment Common Area
+
+            </td>
+            <td>
+                Social Distancing
+            </td>
+            <td>
+                2/2/2021 0:00
+
+            </td>
+            <td>
+                2/3/2021 0:00
+
+            </td>
+            <td>
+                COVID-19/Education Provided
+
+            </td>
+            <td>
+                2101 E BEN WHITE BLVD SVRD EB 428
+
+            </td>
+            <td>
+                307110306
+
+            </td>
+            <td>
+                POINT (-88.448709 24.923983)
+
+            </td>
+
+        </tr>
+    </table>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p> </p><p> </p>
+    <p> </p><p> </p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+</body>
+</html>
